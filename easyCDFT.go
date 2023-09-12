@@ -136,9 +136,6 @@ func processFile(file string, multiwfnPath string, commandLines []string) {
 
 	// 等待命令执行完成
 	err = cmd.Wait()
-	if err != nil {
-		return
-	}
 
 	// 在每次执行完 Multiwfn 后会在当前文件夹下生成一个 CDFT.txt 文件
 	// 将该文件名修改为 ${name}-CDFT.txt 文件，${name} 为一个变量，代表 file 文件的名字
