@@ -189,16 +189,16 @@ func main() {
 	mission := section.Key("mission").String()
 	// 读取 calcLevel 配置
 	calcLevel := section.Key("calcLevel").String()
-	// 读取 ChargeSpin1、2、3 配置
-	ChargeSpin1 := section.Key("ChargeSpin1").String()
-	ChargeSpin2 := section.Key("ChargeSpin2").String()
-	ChargeSpin3 := section.Key("ChargeSpin3").String()
+	// 读取 chargeSpin1、2、3 配置
+	chargeSpin1 := section.Key("chargeSpin1").String()
+	chargeSpin2 := section.Key("chargeSpin2").String()
+	chargeSpin3 := section.Key("chargeSpin3").String()
 	// 定义需要实现的流，创建一个切片用于存放命令
 	var commandLines []string
-	// 根据，config.ini 设置储存命令
+	// 根据 config.ini 设置储存命令
 	if mission == "0" {
 		// 如果 mission 为 0 则使用计算指数命令
-		commandLines = append(commandLines, "22", "1", calcLevel, ChargeSpin1, ChargeSpin2, ChargeSpin3, "y", "2", "q")
+		commandLines = append(commandLines, "22", "1", calcLevel, chargeSpin1, chargeSpin2, chargeSpin3, "y", "2", "q")
 	} else if mission == "1" {
 		// 如果 mission 为 1 则使用计算福井函数命令
 		fmt.Println("Warning: This feature is not yet developed")
