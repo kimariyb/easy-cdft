@@ -6,13 +6,15 @@ EasyCDFT 是厦门大学电子科学系研究生 Kimariyb 开发的一个 Go 语
 
 ## 安装
 
-EasyCDFT 有两种类型的安装方法，一种是安装 Go 语言编译好的程序，下载地址为：https://github.com/kimariyb/easy-cdft/releases/download/v1.0.0/EasyCDFT.zip
+EasyCDFT 有两种类型的安装方法，一种是安装 Go 语言编译好的程序。另一种是使用 Python 脚本执行 EasyCDFT，只需要使用 git clone 本项目就可以了。
 
-另一种是使用 Python 脚本执行 EasyCDFT，只需要使用 git clone 本项目就可以了。第一种编译好的是为了考虑没有网络且对 Python 语言以及系统环境不熟悉的情况，第二种情况是考虑到单个的 Python 脚本体积非常小，便携性非常高，因此作者也同样编写了可以实现相同功能的 Python 脚本。
+编译好 EasyCDFT 下载地址为：https://github.com/kimariyb/easy-cdft/releases/download/v1.0.0/EasyCDFT.zip
+
+第一种编译好的是为了考虑没有网络且对 Python 语言以及系统环境不熟悉的情况，第二种情况是考虑到单个的 Python 脚本体积非常小，便携性非常高，因此作者也同样编写了可以实现相同功能的 Python 脚本。
 
 ## 使用
 
-**如果是使用 Go 语言编译好的版本：**将下载好的 EasyCDFT.zip 解压后，可以修改其中的 `config.ini`。`config.ini` 是 EasyCDFT 的配置文件，请根据各自电脑的情况，配置 `multiwfnPath` 属性，其他的属性可以根据自己的需求修改。
+**如果是使用 Go 语言编译好的版本** 将下载好的 EasyCDFT.zip 解压后，可以修改其中的 `config.ini`。`config.ini` 是 EasyCDFT 的配置文件，请根据各自电脑的情况，配置 `multiwfnPath` 属性，其他的属性可以根据自己的需求修改。
 
 ```ini
 ; 用于配置需要在 Multiwfn 中做批处理的输入文件
@@ -38,7 +40,7 @@ chargeSpin3 = "1 2"
 
 配置完成后，可以在 Bash 终端中输入 `./easy-cdft` 运行（EasyCDFT 没有考虑 Windows 版本，如果想要在 Windows 下运行 EasyCDFT 可以运行 Python 脚本达到目的，可能会需要修改 Python 脚本，这需要对 Python 有一定了解）。
 
-如果是使用 Python 脚本运行 EasyCDFT，只需要在命令行中输入 `python easyCDFT.py` 即可。**Python 版本必须高于 3.9 version！**
+**如果是使用 Python 脚本运行 EasyCDFT**，只需要在命令行中输入 `python easyCDFT.py` 即可。**Python 版本必须高于 3.9 version！**
 
 启动 EasyCDFT 后，就会在命令行中显示以下内容，可以根据这些内容自行判断是否配置成功。
 
