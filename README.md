@@ -22,7 +22,7 @@ EasyCDFT 有两种类型的安装方法，一种是安装 Go 语言编译好的�
 ; 可以为 fchk、mol、mol2、xyz、pdb、gjf 等文件
 inputType = "fchk"
 ; Multiwfn 可执行文件所在的路径，例如 /home/kimariyb/Multiwfn/Multiwfn.exe
-; 同时需要修改 Multiwfn 的 settings.ini，并且配置 gopath
+; 同时需要修改 Multiwfn 的 settings.ini，并且配置 gaupath
 multiwfnPath = "/home/kimariyb/Multiwfn/Multiwfn"
 ; 需要使用 Multiwfn 批量计算概念密度泛函理论中定义的各种量的类型
 ; 0. 计算各种指数，包括全局亲核、亲电；局部亲核、亲电指数
@@ -58,4 +58,4 @@ multiwfnPath: /home/kimariyb/Multiwfn/Multiwfn
 
 ## 注意
 
-无论使不使用 EasyCDFT，要想在 Multiwfn 中做 CDFT 分析时运行 Gaussian 必须配置 Multiwfn 的 settings.ini 中的 `gopath` 属性！
+无论使不使用 EasyCDFT，要想在 Multiwfn 中做 CDFT 分析时运行 Gaussian 必须配置 Multiwfn 的 settings.ini 中的 `gaupath` 属性！
